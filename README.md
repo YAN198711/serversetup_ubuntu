@@ -42,15 +42,15 @@ timedatectl set-timezone Asia/Tokyo
 sudo apt -y install git
 
 ## ④Gitからファイルをダウンロード
-git clone https://github.com/YAN198711/serversetup_ubntu.git \
-chmod -R 755 serversetup_ubntu
+git clone https://github.com/YAN198711/serversetup_ubuntu.git \
+chmod -R 755 serversetup_ubuntu
 
 ## ⑤ファイルの実行
 ### (1)日本語化(約5分)
-./serversetup_ubntu/japanese.sh
+./serversetup_ubuntu/japanese.sh
 ### (2)google-chromeのインストール(約5分)
-./serversetup_ubntu/google.sh
+./serversetup_ubuntu/google.sh
 ### (3)pythonのインストール(約5分)
-./serversetup_ubntu/python.sh
+./serversetup_ubuntu/python.sh
 ### (4)cloud9のインストール(約5分)
-./serversetup_ubntu/cloud9.sh
+./serversetup_ubuntu/cloud9.sh
