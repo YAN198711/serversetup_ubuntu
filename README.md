@@ -54,5 +54,3 @@ chmod -R 755 serversetup_ubuntu
 ./serversetup_ubuntu/python.sh
 ### (4)cloud9のインストール(約5分)
 ./serversetup_ubuntu/cloud9.sh
-
-aaa
