@@ -35,7 +35,7 @@ timedatectl set-timezone Asia/Tokyo
 > ==== AUTHENTICATING FOR org.freedesktop.timedate1.set-timezone === \
 > システムのタイムゾーンを設定するには認証が必要です。 \
 > Authenticating as: ,,, (**【newuser】**) \
-> Password:**パスワードを入力 +エンターキー**
+> Password:**パスワードを入力 +エンターキー** \
 > ==== AUTHENTICATION COMPLETE ===
 
 ## ③Gitをインストール
