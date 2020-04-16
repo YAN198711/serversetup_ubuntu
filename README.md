@@ -21,7 +21,7 @@ sudo usermod -aG sudo **【newuser】**
 su - **【newuser】**
 
 ## ②初回更新
-sudo rm /var/lib/apt/lists/lock \
+sudo rm /var/lib/apt/lists/lock
 
 > [sudo] password for **【newuser】**:**パスワードを入力 +エンターキー**
 
