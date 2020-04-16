@@ -5,8 +5,8 @@ Tera Termを起動、下記をコピー&ペースト
 ## ①ユーザー追加
 sudo adduser **【newuser】**
 
-> Enter new UNIX password:**パスワードを入力** \
-> Retype new UNIX password:**同じパスワードを入力** \
+> Enter new UNIX password:**パスワードを入力 +エンターキー** \
+> Retype new UNIX password:**同じパスワードを入力 +エンターキー** \
 >　-中略- \
 >    Full Name[]: **そのままエンターキー** \
 >    Room Number[]: **そのままエンターキー** \
@@ -22,15 +22,35 @@ su - **【newuser】**
 
 ## ②初回更新
 sudo rm /var/lib/apt/lists/lock \
-> [sudo] password for **【newuser】**:**パスワードを入力** \
-(ユーザーを変更の初回のみパスワードを聞いてくる) \
+
+> [sudo] password for **【newuser】**:**パスワードを入力 +エンターキー**
+
 sudo rm /var/lib/dpkg/lock \
 sudo apt -y update \
-sudo apt -y dist-upgrade \
+sudo apt -y dist-upgrade
+
+## ③タイムゾーンを変更する
+timedatectl set-timezone Asia/Tokyo
+
+> ==== AUTHENTICATING FOR org.freedesktop.timedate1.set-timezone === \
+> システムのタイムゾーンを設定するには認証が必要です。 \
+> Authenticating as: ,,, (**【newuser】**) \
+> Password:**パスワードを入力 +エンターキー**
+> ==== AUTHENTICATION COMPLETE ===
 
 ## ③Gitをインストール
-sudo apt install git
+sudo apt -y install git
 
 ## ④Gitからファイルをダウンロード
-git clone https://github.com/YAN198711/serversetup_ubntu.git
+git clone https://github.com/YAN198711/serversetup_ubntu.git \
 chmod -R 755 serversetup_ubntu
+
+## ⑤ファイルの実行
+### (1)日本語化(約5分)
+./serversetup_ubntu/japanese.sh
+### (2)google-chromeのインストール(約5分)
+./serversetup_ubntu/google.sh
+### (3)pythonのインストール(約5分)
+./serversetup_ubntu/python.sh
+### (4)cloud9のインストール(約5分)
+./serversetup_ubntu/cloud9.sh
