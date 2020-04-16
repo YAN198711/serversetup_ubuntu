@@ -1,7 +1,7 @@
 # 使い方
 Tera Termを起動、下記をコピー&ペースト
 
-# はじめに
+# はじめに 
 ## ①ユーザー追加
 sudo adduser **【newuser】**
 
