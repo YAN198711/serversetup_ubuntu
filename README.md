@@ -1,5 +1,11 @@
 # 使い方
-Tera Termを起動、下記をコピー&ペースト
+1)Tera Termを起動します。
+
+> IP : **ConoHa作成後に表示される** \
+> ID : **root** \
+> pass : **作成時のパスワード +エンターキー**(表示されない)
+
+2)下記をコピー&ペースト
 
 # はじめに 
 ## ①ユーザー追加
@@ -29,7 +35,10 @@ sudo rm /var/lib/dpkg/lock \
 sudo apt -y update \
 sudo apt -y dist-upgrade
 
-## ③タイムゾーンを変更する
+## ③Tera Term用のポートを開放する
+sudo ufw allow 22/tcp
+
+## ④タイムゾーンを変更する
 timedatectl set-timezone Asia/Tokyo
 
 > ==== AUTHENTICATING FOR org.freedesktop.timedate1.set-timezone === \
@@ -38,14 +47,14 @@ timedatectl set-timezone Asia/Tokyo
 > Password:**パスワードを入力 +エンターキー** \
 > ==== AUTHENTICATION COMPLETE ===
 
-## ③Gitをインストール
+## ⑤Gitをインストール
 sudo apt -y install git
 
-## ④Gitからファイルをダウンロード
+## ⑥Gitからファイルをダウンロード
 git clone https://github.com/YAN198711/serversetup_ubuntu.git \
 chmod -R 755 serversetup_ubuntu
 
-## ⑤ファイルの実行
+## ⑦ファイルの実行
 ### (1)日本語化(約5分)
 ./serversetup_ubuntu/japanese.sh
 ### (2)google-chromeのインストール(約5分)
@@ -54,3 +63,30 @@ chmod -R 755 serversetup_ubuntu
 ./serversetup_ubuntu/python.sh
 ### (4)cloud9のインストール(約5分)
 ./serversetup_ubuntu/cloud9.sh
+### (5)ngrokのインストール(約5分)
+./serversetup_ubuntu/ngrok.sh
+
+
+### (6)システムの再起動
+./serversetup_ubuntu/restart.sh
+
+## ⑧ngrokの稼働方法
+1)ngrok公式(https://dashboard.ngrok.com/get-started)より、
+
+> ③ Connect your account \
+> の認証Tokenを予め取得しておく。
+
+2)再起動が完了後、再度Tera Termで接続。 \
+
+> IP : **ConoHa作成後に表示される** \
+> ID : **【newuser】** \
+> pass : **パスワードを入力 +エンターキー**
+
+./ngrok authtoken **ngrok公式、③ Connect your accountの認証Token** \
+例)./ngrok authtoken xaUxxxxxx2Rxxxm3xxxxxxxHxkxxxxxxojhFxxxxVExVNxxxx \
+./serversetup_ubuntu/setup_ngrok.sh
+
+3)ターミナルもしくは、Cloud9起動後、下記コマンドを入力で port:80,81,82,83,84 が開通します。\
+ngrok start --all \
+※このターミナルを閉じるとngrokの通信が切れ、Freeメンバーの場合はアドレスが変化します。
+
