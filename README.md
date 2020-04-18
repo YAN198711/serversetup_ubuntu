@@ -37,7 +37,9 @@ sudo apt -y dist-upgrade
 
 ## ③Tera Term用のポートを開放する
 sudo ufw allow 22/tcp \
-sudo ufw -y enable
+sudo ufw enable
+
+> Command may disrupt existing ssh connections. Proceed with operation (y|n)?**y +エンターキー**
 
 ## ④タイムゾーンを変更する
 timedatectl set-timezone Asia/Tokyo
