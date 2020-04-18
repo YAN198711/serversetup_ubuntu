@@ -71,7 +71,7 @@ chmod -R 755 serversetup_ubuntu
 ./serversetup_ubuntu/restart.sh
 
 ## ⑧Cloud9起動方法
-1)再起動が完了後、再度Tera Termで接続。 \
+1)再起動が完了後、再度Tera Termで接続。
 
 > IP : **ConoHa作成後に表示される** \
 > ID : **【newuser】** \
@@ -85,6 +85,14 @@ IP：118.00.00.xx \
 名前：user \
 パス:abcd1234 \
 forever start ~/c9sdk/server.js -l 118.00.00.xx -p 8080 -w ~/workspace/ -a user:abcd1234
+
+## cloud9の初回設定
+Python support \
+Python Version　⇒　Python 3 \
+PYTHON PATH　⇒　:/root/.pyenv/shims/python3 　を右端に追加 \
+デフォルトのままなら以下の通りとなる \
+/usr/local/lib/python2.7/dist-packages:/usr/local/lib/python3.4/dist-packages:/usr/local/lib/python3.5/dist-packages:/root/.pyenv/shims/python3
+
 
 ## ⑨ngrokの稼働方法
 1)ngrok公式サイトにアクセスし、(https://dashboard.ngrok.com/get-started)
