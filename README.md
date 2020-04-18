@@ -36,7 +36,8 @@ sudo apt -y update \
 sudo apt -y dist-upgrade
 
 ## ③Tera Term用のポートを開放する
-sudo ufw allow 22/tcp
+sudo ufw allow 22/tcp \
+sudo ufw -y enable
 
 ## ④タイムゾーンを変更する
 timedatectl set-timezone Asia/Tokyo
