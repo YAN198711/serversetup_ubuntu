@@ -17,28 +17,14 @@ sed -i -e '6a\    proto: http' /home/user/.ngrok2/ngrok.yml
 
 # 7行目に'devapp:'を入れる
 sed -i -e '7a\  tv2:' /home/user/.ngrok2/ngrok.yml
-# 8行目に'addr: 80'を入れる
+# 8行目に'addr: 81'を入れる
 sed -i -e '8a\    addr: 81' /home/user/.ngrok2/ngrok.yml
 # 9行目に'proto: http'を入れる
 sed -i -e '9a\    proto: http' /home/user/.ngrok2/ngrok.yml
 
 # 10行目に'devapp:'を入れる
 sed -i -e '10a\  tv3:' /home/user/.ngrok2/ngrok.yml
-# 11行目に'addr: 80'を入れる
+# 11行目に'addr: 82'を入れる
 sed -i -e '11a\    addr: 82' /home/user/.ngrok2/ngrok.yml
 # 12行目に'proto: http'を入れる
 sed -i -e '12a\    proto: http' /home/user/.ngrok2/ngrok.yml
-
-# 13行目に'devapp:'を入れる
-sed -i -e '13a\  tv4:' /home/user/.ngrok2/ngrok.yml
-# 14行目に'addr: 80'を入れる
-sed -i -e '14a\    addr: 83' /home/user/.ngrok2/ngrok.yml
-# 15行目に'proto: http'を入れる
-sed -i -e '15a\    proto: http' /home/user/.ngrok2/ngrok.yml
-
-# 16行目に'devapp:'を入れる
-sed -i -e '16a\  tv5:' /home/user/.ngrok2/ngrok.yml
-# 17行目に'addr: 80'を入れる
-sed -i -e '17a\    addr: 84' /home/user/.ngrok2/ngrok.yml
-# 18行目に'proto: http'を入れる
-sed -i -e '18a\    proto: http' /home/user/.ngrok2/ngrok.yml
