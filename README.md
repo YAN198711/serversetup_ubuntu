@@ -33,9 +33,14 @@ sudo rm /var/lib/apt/lists/lock
 
 sudo rm /var/cache/apt/archives/lock \
 sudo rm /var/lib/dpkg/lock \
+sudo rm /var/lib/dpkg/lock-frontend \
 sudo dpkg --configure -a \
 sudo apt -y update \
-sudo apt -y dist-upgrade
+sudo apt -y dist-upgrade \
+> ※E: が出現する場合、少し時間を置いてから再度上部の \
+> sudo rm /var/lib/apt/lists/lock \
+> から実施してください。
+
 
 ## ③Tera Term用のポートを開放する
 sudo ufw allow 22/tcp \
