@@ -31,6 +31,7 @@ sudo rm /var/lib/apt/lists/lock
 
 > [sudo] password for **【newuser】**:**パスワードを入力 +エンターキー**
 
+sudo rm /var/cache/apt/archives/lock \
 sudo rm /var/lib/dpkg/lock \
 sudo apt -y update \
 sudo apt -y dist-upgrade
