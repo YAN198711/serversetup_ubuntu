@@ -70,8 +70,24 @@ chmod -R 755 serversetup_ubuntu
 ### (6)システムの再起動
 ./serversetup_ubuntu/restart.sh
 
-## ⑧ngrokの稼働方法
-1)ngrok公式(https://dashboard.ngrok.com/get-started)より、
+## ⑧Cloud9起動方法
+1)再起動が完了後、再度Tera Termで接続。 \
+
+> IP : **ConoHa作成後に表示される** \
+> ID : **【newuser】** \
+> pass : **パスワードを入力 +エンターキー**
+
+forever start ~/c9sdk/server.js -l **【IP(xxx.xx.xx.xx)】** -p 8080 -w ~/workspace/ -a **名前**:**パスワード**
+
+※名前およびパスワードは管理しやすいものに変更 \
+例) \
+IP：118.00.00.xx \
+名前：user \
+パス:abcd1234 \
+forever start ~/c9sdk/server.js -l 118.00.00.xx -p 8080 -w ~/workspace/ -a user:abcd1234
+
+## ⑨ngrokの稼働方法
+1)ngrok公式サイトにアクセスし、(https://dashboard.ngrok.com/get-started)
 
 > ③ Connect your account \
 > の認証Tokenを予め取得しておく。
@@ -82,7 +98,7 @@ chmod -R 755 serversetup_ubuntu
 > ID : **【newuser】** \
 > pass : **パスワードを入力 +エンターキー**
 
-./ngrok authtoken **ngrok公式、③ Connect your accountの認証Token** \
+./ngrok authtoken **ngrok認証Token** \
 例)./ngrok authtoken xaUxxxxxx2Rxxxm3xxxxxxxHxkxxxxxxojhFxxxxVExVNxxxx \
 ./serversetup_ubuntu/setup_ngrok.sh
 

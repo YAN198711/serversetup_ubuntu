@@ -20,4 +20,5 @@ sudo ufw -y enable
 # 開かれているポートを確認する
 #sudo ufw status
 
+# foreverをインストール
 sudo npm install forever -g
