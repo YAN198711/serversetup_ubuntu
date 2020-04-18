@@ -13,7 +13,6 @@ sudo ufw allow 80/tcp
 sudo ufw allow 81/tcp
 sudo ufw allow 82/tcp
 sudo ufw allow 83/tcp
-sudo ufw allow 84/tcp
 sudo ufw -y enable
 # 開かれているポートを確認する
 #sudo ufw status

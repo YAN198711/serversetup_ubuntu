@@ -28,3 +28,10 @@ sed -i -e '10a\  tv3:' /home/user/.ngrok2/ngrok.yml
 sed -i -e '11a\    addr: 82' /home/user/.ngrok2/ngrok.yml
 # 12行目に'proto: http'を入れる
 sed -i -e '12a\    proto: http' /home/user/.ngrok2/ngrok.yml
+
+# 13行目に'devapp:'を入れる
+sed -i -e '10a\  tv4:' /home/user/.ngrok2/ngrok.yml
+# 14行目に'addr: 83'を入れる
+sed -i -e '11a\    addr: 83' /home/user/.ngrok2/ngrok.yml
+# 15行目に'proto: http'を入れる
+sed -i -e '12a\    proto: http' /home/user/.ngrok2/ngrok.yml
