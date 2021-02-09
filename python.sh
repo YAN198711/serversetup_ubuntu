@@ -15,7 +15,7 @@ pyenv rehash
 
 # pipインストール
 pip install --upgrade pip
-pip install -r ~/serversetup_ubntu/requirements.txt
+pip install -r ~/serversetup_ubuntu/requirements.txt
 
 # TA-Libインストール
 cd ~
