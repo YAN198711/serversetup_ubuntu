@@ -28,7 +28,7 @@ scripts/install-sdk.sh
 cd ~
 
 sudo ufw allow 8080/tcp
-sudo ufw -y enable
+sudo ufw enable -y
 # 開かれているポートを確認する
 #sudo ufw status
 
