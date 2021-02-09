@@ -9,8 +9,8 @@ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 source ~/.bashrc
 #pyenv -v
-pyenv install 3.7.2
-pyenv global 3.7.2
+pyenv install 3.8.6
+pyenv global 3.8.6
 pyenv rehash
 
 # pipインストール
