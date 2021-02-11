@@ -2,14 +2,14 @@
 cd ~
 
 # pyenvのインストール(2.7)
-sudo apt -y install python2.7
+yes | sudo apt install python2.7
 
 # Node.jsのインストール
-sudo apt -y install nodejs npm
+yes | sudo apt install nodejs npm
 sudo npm install n -g
 # sudo n stable
 sudo n 12.20.2
-sudo apt -y purge nodejs npm
+yes | sudo apt purge nodejs npm
 exec $SHELL -l
 #node -v
 
@@ -21,7 +21,7 @@ scripts/install-sdk.sh
 cd ~
 
 sudo ufw allow 8080/tcp
-sudo ufw enable -y
+yes | sudo ufw enable
 # 開かれているポートを確認する
 #sudo ufw status
 
