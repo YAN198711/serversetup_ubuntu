@@ -3,7 +3,14 @@
 
 > IP : **ConoHa作成後に表示される** \
 > ID : **root** \
-> pass : **作成時のパスワード +エンターキー**(表示されない)
+> pass : **作成時のパスワード +エンターキー**(表示されない) \
+※IPを入れても接続ができない場合、ConoHaから対象VPSのコンソールへ接続し、 \
+> ID : **root** \
+> pass : **作成時のパスワード +エンターキー**(表示されない) \
+sudo ufw allow 22/tcp \
+sudo ufw enable -y \
+sudo reboot \
+し、再度Tera Termを接続します。
 
 2)下記をコピー&ペースト
 
@@ -27,9 +34,12 @@ sudo usermod -aG sudo **【newuser】**
 su - **【newuser】**
 
 ## ②初回更新
-sudo rm /var/lib/apt/lists/lock
+sudo apt update \
 
 > [sudo] password for **【newuser】**:**パスワードを入力 +エンターキー**
+sudo apt dist-upgrade \
+sudo apt update
+
 
 sudo rm /var/cache/apt/archives/lock \
 sudo rm /var/lib/dpkg/lock \
