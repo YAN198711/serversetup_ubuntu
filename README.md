@@ -5,7 +5,7 @@
 > ID : **root** \
 > pass : **作成時のパスワード +エンターキー**(表示されない)
 
-※IPを入れても接続ができない場合、ConoHaから対象VPSのコンソールへ接続し、 \
+※IPを入れても接続ができない場合、ConoHaから対象VPSのコンソールへ接続し、
 > ID : **root** \
 > pass : **作成時のパスワード +エンターキー**(表示されない) \
 
@@ -36,22 +36,12 @@ sudo usermod -aG sudo **【newuser】**
 su - **【newuser】**
 
 ## ②初回更新
-sudo apt update \
+sudo apt update
 
 > [sudo] password for **【newuser】**:**パスワードを入力 +エンターキー**
 sudo apt dist-upgrade \
-sudo apt update
-
-
-sudo rm /var/cache/apt/archives/lock \
-sudo rm /var/lib/dpkg/lock \
-sudo rm /var/lib/dpkg/lock-frontend \
-sudo dpkg --configure -a \
-sudo apt -y update \
-sudo apt -y dist-upgrade
-> ※E: が出現する場合、少し時間を置いてから再度上部の \
-> sudo rm /var/lib/apt/lists/lock \
-> から実施してください。
+sudo apt update \
+sudo apt upgrade
 
 
 ## ③Tera Term用のポートを開放する
