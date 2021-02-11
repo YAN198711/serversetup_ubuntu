@@ -2,7 +2,7 @@
 cd ~
 
 # ツールのインストール
-sudo apt install build-essential
+sudo apt install -y build-essential
 
 # タイムゾーンの変更(Asia/Tolyo)
-sudo timedatectl set-timezone Asia/Tokyo -y
+sudo timedatectl set-timezone Asia/Tokyo
