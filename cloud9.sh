@@ -11,8 +11,7 @@ sudo npm install n -g
 sudo n 12.20.2
 yes | sudo apt purge nodejs npm
 exec $SHELL -l
-#node -v
-
+# node -v
 
 # Cloud9のインストール
 git clone https://github.com/YAN198711/core.git c9sdk
@@ -23,7 +22,7 @@ cd ~
 sudo ufw allow 8080/tcp
 yes | sudo ufw enable
 # 開かれているポートを確認する
-#sudo ufw status
+# sudo ufw status
 
 # foreverをインストール
 sudo npm install forever -g
