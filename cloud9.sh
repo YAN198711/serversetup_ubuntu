@@ -1,7 +1,7 @@
 #!/bin/bash
 cd ~
 
-# pyenvのインストール(2.7.18)
+# pyenvのインストール(2.7)
 sudo apt -y install python2.7
 
 # Node.jsのインストール
