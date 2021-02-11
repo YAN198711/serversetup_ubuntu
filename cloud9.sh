@@ -2,16 +2,7 @@
 cd ~
 
 # pyenvのインストール(2.7.18)
-sudo apt -y install build-essential libffi-dev libssl-dev zlib1g-dev liblzma-dev libbz2-dev libreadline-dev libsqlite3-dev # bz2, readline, sqlite3
-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
-echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(pyenv init -)"' >> ~/.bashrc
-source ~/.bashrc
-#pyenv -v
-pyenv install 2.7.18
-pyenv global 2.7.18
-pyenv rehash
+sudo apt -y install python2.7
 
 # Node.jsのインストール
 sudo apt -y install nodejs npm
