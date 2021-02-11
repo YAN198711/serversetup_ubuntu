@@ -3,10 +3,12 @@
 
 > IP : **ConoHa作成後に表示される** \
 > ID : **root** \
-> pass : **作成時のパスワード +エンターキー**(表示されない) \
+> pass : **作成時のパスワード +エンターキー**(表示されない)
+
 ※IPを入れても接続ができない場合、ConoHaから対象VPSのコンソールへ接続し、 \
 > ID : **root** \
 > pass : **作成時のパスワード +エンターキー**(表示されない) \
+
 sudo ufw allow 22/tcp \
 sudo ufw enable -y \
 sudo reboot \
