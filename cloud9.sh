@@ -19,10 +19,11 @@ cd c9sdk
 scripts/install-sdk.sh
 cd ~
 
+# 接続ポートを開く(8080)
 sudo ufw allow 8080/tcp
 yes | sudo ufw enable
-# 開かれているポートを確認する
-# sudo ufw status
+exec $SHELL -l
+# sudo ufw status # 開かれているポートを確認する
 
 # foreverをインストール
 sudo npm install forever -g
