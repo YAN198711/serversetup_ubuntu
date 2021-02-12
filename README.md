@@ -40,8 +40,7 @@ sudo apt update
 
 > [sudo] password for **【newuser】**:**パスワードを入力 +エンターキー**
 
-yes | sudo apt dist-upgrade \
-sudo apt upgrade
+yes | sudo apt dist-upgrade
 
 
 ## ③Tera Term用のポートを開放する
