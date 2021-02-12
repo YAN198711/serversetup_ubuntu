@@ -9,7 +9,6 @@ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo 'export PATH="${PYENV_ROOT}/bin:${PATH}"' >> ~/.bashrc
 echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 source ~/.bashrc
-exec $SHELL -l
 pyenv install 3.8.6
 pyenv global 3.8.6
 pyenv rehash
