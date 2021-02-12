@@ -1,7 +1,6 @@
 #!/bin/bash
 cd ~
 sudo apt update
-exec $SHELL -l
 
 # pyenvのインストール(2.7)
 yes | sudo apt install python2.7
@@ -12,7 +11,6 @@ sudo npm install n -g
 # sudo n stable
 sudo n 12.20.2
 yes | sudo apt purge nodejs npm
-exec $SHELL -l
 # node -v
 
 # Cloud9のインストール
@@ -24,7 +22,6 @@ cd ~
 # 接続ポートを開く(8080)
 sudo ufw allow 8080/tcp
 yes | sudo ufw enable
-exec $SHELL -l
 # sudo ufw status # 開かれているポートを確認する
 
 # foreverをインストール
