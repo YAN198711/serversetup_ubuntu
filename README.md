@@ -45,7 +45,7 @@ yes | sudo apt dist-upgrade
 
 ## ③Tera Term用のポートを開放する
 sudo ufw allow 22/tcp \
-sudo ufw enable
+yes | sudo ufw enable
 
 > Command may disrupt existing ssh connections. Proceed with operation (y|n)?**y +エンターキー**
 
