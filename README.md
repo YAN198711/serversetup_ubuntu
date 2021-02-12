@@ -66,6 +66,8 @@ git clone https://github.com/YAN198711/serversetup_ubuntu.git \
 chmod -R 755 serversetup_ubuntu
 
 ## ⑦ファイルの実行
+### (0)共通作業(約1分)
+./serversetup_ubuntu/common.sh
 ### (1)日本語化(約5分)
 ./serversetup_ubuntu/japanese.sh
 ### (2)google-chromeのインストール(約5分)
