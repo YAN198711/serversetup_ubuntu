@@ -61,7 +61,7 @@ timedatectl set-timezone Asia/Tokyo
 > ==== AUTHENTICATION COMPLETE ===
 
 ## ⑤Gitをインストール
-sudo apt -y install git
+yes | sudo apt install git
 
 ## ⑥Gitからファイルをダウンロード
 git clone https://github.com/YAN198711/serversetup_ubuntu.git \
