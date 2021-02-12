@@ -13,7 +13,7 @@ matplotlib
 numba
 numpy
 oauth2client
-pandas==0.24.2
+pandas
 pillow
 pybitflyer
 Pysher
