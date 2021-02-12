@@ -1,5 +1,6 @@
 #!/bin/bash
 cd ~
+sudo apt update
 
 # pyenvのインストール(2.7)
 yes | sudo apt install python2.7
