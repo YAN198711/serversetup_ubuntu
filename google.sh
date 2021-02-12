@@ -1,8 +1,9 @@
 #!/bin/bash
 cd ~
+sudo apt update
 
 # Chrome Driverのインストール
-sudo apt -y install unzip zip
+yes | sudo apt install unzip zip
 curl -O https://chromedriver.storage.googleapis.com/88.0.4324.96/chromedriver_linux64.zip
 unzip chromedriver_linux64.zip
 sudo mv chromedriver /usr/local/bin/
@@ -16,6 +17,5 @@ ls -l /etc/apt/sources.list.d
 cat /etc/apt/sources.list.d/google.list
 sudo wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo apt update
-sudo apt -y install google-chrome-stable
+yes | sudo apt install google-chrome-stable
 #google-chrome --version
-#sudo apt -y install google-chrome-stable
