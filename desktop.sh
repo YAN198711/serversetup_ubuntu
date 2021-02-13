@@ -20,3 +20,6 @@ sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic ma
 sudo apt update
 yes | sudo apt install --install-recommends winehq-stable
 # wine --version
+
+# winetricksのインストール
+sudo apt install -y winetricks
