@@ -72,10 +72,10 @@ chmod -R 755 serversetup_ubuntu
 ./serversetup_ubuntu/japanese.sh
 ### (2)google-chromeのインストール(約5分)
 ./serversetup_ubuntu/google.sh
-### (3)pythonのインストール(約5分)
-./serversetup_ubuntu/python.sh
-### (4)cloud9のインストール(約5分)
+### (3)cloud9のインストール(約5分)
 ./serversetup_ubuntu/cloud9.sh
+### (4)pythonのインストール(約5分)
+source serversetup_ubuntu/python.sh
 ### (5)ngrokのインストール(約5分)
 ./serversetup_ubuntu/ngrok.sh
 
