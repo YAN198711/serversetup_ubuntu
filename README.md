@@ -66,7 +66,8 @@ source serversetup_ubuntu/python.sh
 ### (5)デスクトップのインストール(手動＋自動：約5分)
 ./serversetup_ubuntu/desktop.sh \
 **※数分経過後、Y/n →　「Y」を押してエンターキーを押す。** \
-**※その後の選択肢ではOKとlightGDMを選択してください。** \
+**※ピンク色の画面が出るので、「ESCキー」を押してくださ。** \
+**※lightGDMを選択、エンターしてください。** \
 
 ### システムの再起動を実施
 yes | sudo apt autoremove \
