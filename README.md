@@ -80,7 +80,8 @@ source serversetup_ubuntu/python.sh
 以下を一行ずつコピーして貼り付けてください。 \
 yes | sudo apt install ubuntu-desktop \
 yes | sudo apt install mate-* \
-yes | sudo apt install ubuntu-mate-* \
+sudo apt install ubuntu-mate-* \
+Y/n →　「Y」を押してエンターキーを押す \
 **※途中の選択肢ではOKとlightGDMを選択してください。** \
 echo mate-session > ~/.xsession \
 ./serversetup_ubuntu/desktop.sh
