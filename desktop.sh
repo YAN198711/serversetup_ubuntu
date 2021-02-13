@@ -2,6 +2,13 @@
 cd ~
 sudo apt update
 
+# Desktop(MATE)のインストール
+yes | sudo apt install ubuntu-desktop
+yes | sudo apt install mate-*
+sudo apt install ubuntu-mate-*
+echo mate-session > ~/.xsession
+# ここでYとok、lightGBMを選ぶ
+
 # リモートデスクトップのインストール
 yes | sudo apt install xrdp
 sudo update-rc.d -f xrdp defaults
