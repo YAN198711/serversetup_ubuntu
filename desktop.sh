@@ -22,4 +22,4 @@ yes | sudo apt install --install-recommends winehq-stable
 # wine --version
 
 # winetricksのインストール
-sudo apt install -y winetricks
+yes | sudo apt install winetricks
