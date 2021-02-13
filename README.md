@@ -76,12 +76,18 @@ chmod -R 755 serversetup_ubuntu
 ./serversetup_ubuntu/cloud9.sh
 ### (4)pythonのインストール(約5分)
 ./serversetup_ubuntu/python.sh
-### (5)ngrokのインストール(約5分)
-./serversetup_ubuntu/ngrok.sh
+### (5)デスクトップのインストール(手動＋自動：約5分)
+以下を一行ずつコピーして貼り付けてください。 \
+yes | sudo apt install ubuntu-desktop \
+yes | sudo apt install mate-* \
+yes | sudo apt install ubuntu-mate-* \
+**※途中の選択肢ではOKとlightGDMを選択してください。** \
+echo mate-session > ~/.xsession \
+./serversetup_ubuntu/desktop.sh
 
-
-### (6)システムの再起動
-./serversetup_ubuntu/restart.sh
+### システムの再起動を実施
+yes | sudo apt autoremove \
+sudo reboot
 
 ## ⑧Cloud9起動方法
 1)再起動が完了後、再度Tera Termで接続。
@@ -107,23 +113,4 @@ PYTHON PATH　⇒　:/root/.pyenv/shims/python3 　を右端に追加 \
 /usr/local/lib/python2.7/dist-packages:/usr/local/lib/python3.4/dist-packages:/usr/local/lib/python3.5/dist-packages:/root/.pyenv/shims/python3
 
 
-## ⑨ngrokの稼働方法
-1)ngrok公式サイトにアクセスし、(https://dashboard.ngrok.com/get-started)
-
-> ③ Connect your account \
-> の認証Tokenを予め取得しておく。
-
-2)再起動が完了後、再度Tera Termで接続。 \
-
-> IP : **ConoHa作成後に表示される** \
-> ID : **【newuser】** \
-> pass : **パスワードを入力 +エンターキー**
-
-./ngrok authtoken **ngrok認証Token** \
-例)./ngrok authtoken xaUxxxxxx2Rxxxm3xxxxxxxHxkxxxxxxojhFxxxxVExVNxxxx \
-./serversetup_ubuntu/setup_ngrok.sh
-
-3)ターミナルもしくは、Cloud9起動後、下記コマンドを入力で port:80,81,82,83,84 が開通します。\
-ngrok start --all \
-※このターミナルを閉じるとngrokの通信が切れ、Freeメンバーの場合はアドレスが変化します。
 
