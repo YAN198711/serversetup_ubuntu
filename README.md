@@ -1,20 +1,9 @@
 # 使い方
-1)Tera Termを起動します。
+Tera Termを起動します。
 
 > IP : **ConoHa作成後に表示される** \
 > ID : **root** \
-> pass : **作成時のパスワード +エンターキー**(表示されない)
-
-※IPを入れても接続ができない場合、ConoHaから対象VPSのコンソールへ接続し、
-> ID : **root** \
-> pass : **作成時のパスワード +エンターキー**(表示されない) \
-
-sudo ufw allow 22/tcp \
-sudo ufw enable -y \
-sudo reboot \
-し、再度Tera Termを接続します。
-
-2)下記をコピー&ペースト
+> pass : **作成時のパスワード + エンターキー**
 
 # はじめに 
 ## ①ユーザー追加
