@@ -77,14 +77,9 @@ chmod -R 755 serversetup_ubuntu
 ### (4)pythonのインストール(約5分)
 source serversetup_ubuntu/python.sh
 ### (5)デスクトップのインストール(手動＋自動：約5分)
-以下を一行ずつコピーして貼り付けてください。 \
-yes | sudo apt install ubuntu-desktop \
-yes | sudo apt install mate-* \
-sudo apt install ubuntu-mate-* \
-Y/n →　「Y」を押してエンターキーを押す \
-**※途中の選択肢ではOKとlightGDMを選択してください。** \
-echo mate-session > ~/.xsession \
-./serversetup_ubuntu/desktop.sh
+./serversetup_ubuntu/desktop.sh \
+**※数分経過後、Y/n →　「Y」を押してエンターキーを押す。** \
+**※その後の選択肢ではOKとlightGDMを選択してください。** \
 
 ### システムの再起動を実施
 yes | sudo apt autoremove \
