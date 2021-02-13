@@ -36,8 +36,6 @@ yes | sudo apt dist-upgrade
 sudo ufw allow 22/tcp \
 yes | sudo ufw enable
 
-> Command may disrupt existing ssh connections. Proceed with operation (y|n)?**y +エンターキー**
-
 ## ④タイムゾーンを変更する
 timedatectl set-timezone Asia/Tokyo
 
