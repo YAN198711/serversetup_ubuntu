@@ -1,4 +1,4 @@
-#!/bin/source
+#!/bin/bash
 cd ~
 sudo apt update
 
