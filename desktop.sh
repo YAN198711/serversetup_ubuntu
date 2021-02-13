@@ -23,3 +23,4 @@ yes | sudo apt install --install-recommends winehq-stable
 
 # winetricksのインストール
 yes | sudo apt install winetricks
+winetricks allfonts
