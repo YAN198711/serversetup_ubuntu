@@ -75,7 +75,7 @@ chmod -R 755 serversetup_ubuntu
 ### (3)cloud9のインストール(約5分)
 ./serversetup_ubuntu/cloud9.sh
 ### (4)pythonのインストール(約5分)
-source serversetup_ubuntu/python.sh
+./serversetup_ubuntu/python.sh
 ### (5)ngrokのインストール(約5分)
 ./serversetup_ubuntu/ngrok.sh
 
