@@ -4,7 +4,7 @@ sudo apt update
 
 # Chrome Driverのインストール
 yes | sudo apt install unzip zip
-curl -O https://chromedriver.storage.googleapis.com/88.0.4324.96/chromedriver_linux64.zip
+curl -O https://chromedriver.storage.googleapis.com/89.0.4389.23/chromedriver_linux64.zip
 unzip chromedriver_linux64.zip
 sudo mv chromedriver /usr/local/bin/
 chmod 777 /usr/local/bin/chromedriver
