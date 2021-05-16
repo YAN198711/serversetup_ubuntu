@@ -6,8 +6,9 @@ sudo apt update
 yes | sudo apt install ubuntu-desktop
 yes | sudo apt install mate-*
 yes | sudo apt install ubuntu-mate-*
+# ここでEnter、lightGBMを選ぶ
 echo mate-session > ~/.xsession
-# ここでYとok、lightGBMを選ぶ
+
 
 # リモートデスクトップのインストール
 yes | sudo apt install xrdp
